@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitzy Paola Carmona Cid — Portafolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
+        :root {
+            --fondo-oscuro: #12121f;
+            --tarjeta: #25203f;
+            --morado: #7c3aed;
+            --morado-claro: #9d4edd;
+            --texto: #f0f0f8;
+            --texto-suave: #c8c8e0;
+        }
+        body { background-color: var(--fondo-oscuro); color: var(--texto); line-height: 1.6; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        nav { text-align: center; margin-bottom: 3rem; }
+        nav a { color: var(--texto-suave); text-decoration: none; margin: 0 1rem; font-weight: 500; }
+        nav a:hover, nav a.activo { color: var(--morado-claro); border-bottom: 2px solid var(--morado); }
+        .tarjeta { background-color: var(--tarjeta); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .etiqueta { display: inline-block; background-color: var(--morado); color: white; padding: 4px 12px; border-radius: 6px; font-size: 0.9rem; margin: 0.3rem 0.3rem 0.3rem 0; }
+        .periodo { display: inline-block; background-color: var(--morado); color: white; padding: 4px 12px; border-radius: 6px; font-weight: 600; margin-bottom: 0.5rem; }
+        .perfil { text-align: center; }
+        .avatar { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--morado); margin-bottom: 1rem; object-fit: cover; }
+        h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+        .subtitulo { color: var(--morado-claro); font-size: 1.2rem; margin-bottom: 1rem; }
+        .contacto { margin-top: 1rem; color: var(--texto-suave); }
+        .contacto span { margin: 0 0.5rem; }
+        h2 { color: var(--morado-claro); margin-bottom: 1.2rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.5rem; }
+        .proyecto, .actividad { margin-bottom: 1.5rem; }
+        .proyecto h3, .actividad h3 { margin-bottom: 0.4rem; }
+        .proyecto p, .actividad p { color: var(--texto-suave); margin-bottom: 0.5rem; }
+        .habilidad { margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem; }
+        .habilidad::before { content: "✔"; color: var(--morado-claro); font-weight: bold; }
+        .pagina { display: none; }
+        .pagina.visible { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio" class="enlace-pagina activo">Inicio</a>
+        <a href="#actividades" class="enlace-pagina">Actividades</a>
+    </nav>
+
+    <div id="inicio" class="pagina visible">
+        <div class="tarjeta perfil">
+            <img src="foto.jpg" alt="Foto de Mitzy" class="avatar">
+            <h1>MITZY PAOLA CARMONA CID</h1>
+            <p class="subtitulo">Ingeniería Informática — 5º Semestre</p>
+            <p>Soy estudiante de Ingeniería Informática, actualmente en formación, con interés en el desarrollo de software, aplicaciones y tecnologías de la información. Tengo experiencia en diseño, enseñanza y creación de proyectos culturales y ecológicos. Me considero una persona responsable, comprometida y con disposición para aprender y adquirir experiencia profesional.</p>
+            <p class="contacto">📞 712-138-4225 <span>|</span> ✉️ mitzycid383@gmail.com <span>|</span> 📍 Atlacomulco, Estado de México</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>🎓 Educación</h2>
+            <p class="periodo">2024 – Actualidad</p>
+            <h3>Ingeniería Informática</h3>
+            <p style="color:var(--texto-suave); margin-bottom:1rem;">Tecnológico de Estudios Superiores de San Felipe del Progreso</p>
+            <p class="periodo">2021 – 2024</p>
+            <h3>Dibujo Arquitectónico y de Construcción</h3>
+            <p style="color:var(--texto-suave);">COBAEM</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>&lt;/&gt; Proyectos Académicos</h2>
+            <div class="proyecto">
+                <h3>Mueble Ecológico</h3>
+                <p>Diseño y elaboración de un mueble con materiales sostenibles, aplicando principios de diseño y cuidado del medio ambiente.</p>
+                <span class="etiqueta">Diseño</span>
+                <span class="etiqueta">Sostenibilidad</span>
+            </div>
+            <div class="proyecto">
+                <h3>Impartición de Cursos de Office</h3>
+                <p>Brindé capacitación sobre herramientas de Office a estudiantes de una secundaria, enseñando el uso de procesadores de texto, hojas de cálculo y presentaciones.</p>
+                <span class="etiqueta">Office</span>
+                <span class="etiqueta">Enseñanza</span>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto de Lotería Mazahua</h3>
+                <p>Desarrollo de un proyecto que busca difundir y preservar la cultura mazahua a través de un juego tradicional didáctico y educativo.</p>
+                <span class="etiqueta">Cultura</span>
+                <span class="etiqueta">Difusión</span>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <h2>✔ Habilidades</h2>
+            <div class="habilidad">Trabajo en equipo</div>
+            <div class="habilidad">Responsabilidad</div>
+            <div class="habilidad">Organización</div>
+            <div class="habilidad">Creatividad</div>
+            <div class="habilidad">Comunicación y enseñanza</div>
+        </div>
+    </div>
+
+    <div id="actividades" class="pagina">
+        <div class="tarjeta">
+            <h2>📋 Actividades y Participaciones</h2>
+            <div class="actividad">
+                <h3>📌 [Nombre de la actividad 1]</h3>
+                <p><em>[Fecha]</em></p>
+                <p>Descripción de tu participación y lo que aprendiste.</p>
+            </div>
+            <div class="actividad">
+                <h3>📌 [Nombre de la actividad 2]</h3>
+                <p><em>[Fecha]</em></p>
+                <p>Descripción de tus funciones y resultados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const enlaces = document.querySelectorAll('.enlace-pagina');
+        const paginas = document.querySelectorAll('.pagina');
+        enlaces.forEach(enlace => {
+            enlace.addEventListener('click', e => {
+                e.preventDefault();
+                enlaces.forEach(el => el.classList.remove('activo'));
+                paginas.forEach(pag => pag.classList.remove('visible'));
+                enlace.classList.add('activo');
+                document.getElementById(enlace.getAttribute('href').substring(1)).classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>
